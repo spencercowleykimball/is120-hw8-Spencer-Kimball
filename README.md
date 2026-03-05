@@ -4,12 +4,32 @@
 
 1. Various screenshots of different stages of your animation throughout your development process:
 
+Step1:
+
 ![Step 1](step1.png)
+
+Step2:
+
 ![Step 2](step2.png)
+
+Step3:
+
 ![Step 3](step3.png)
+
+Step4:
+
 ![Step 4](step4.png)
+
+Step5:
+
 ![Step 5](step5.png)
+
+Step6:
+
 ![Step 6](step6.png)
+
+Step7:
+
 ![Step 7](step5.png)
 
 2. Explain how you got certain stages of the animation completed and what it was like to break this problem down step by step.
