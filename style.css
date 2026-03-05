@@ -1,0 +1,92 @@
+/* To give some breathing room for the animation */
+header {
+    gap: 20px;
+    padding: 100px;
+}
+
+/* First key frame for the first div, border top and left */
+@keyframes rotate-left {
+    from {
+        transform: rotate(90deg);
+        translate: -150px;
+        opacity: 0;
+    } 
+    to {
+        transform: rotate(0deg);
+        translate: 0px;
+        opacity: 100%;
+        
+    }
+}
+
+/* First key frame for the first div, border bottom and right */
+@keyframes rotate-right {
+    from {
+        transform: rotate(90deg);
+        translate: 150px;
+        opacity: 0%;
+    } 
+    to {
+        transform: rotate(0deg);
+        translate: 0px;
+        opacity: 100%;
+    }
+}
+
+/* Key frame for the inside fill div */
+@keyframes fill {
+    from {
+        height: 0px;
+        width: 0px;
+        background-color: none;
+    }
+    to {
+        height: 140px;
+        width: 140px;
+        background-color: black;
+    }
+}
+
+/* Container for the 3 divs of the animation - centering on the page */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    
+}
+
+/* Div 1 for the animation - rotating in from the left side */
+.animation-div-1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-top: solid 20px black;
+    border-left: solid 20px black;
+    border-right: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+    animation: rotate-left .5s;
+}
+
+/* Div 2 for the animation - rotating in from the right side */
+.animation-div-2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-bottom: solid 20px black;
+    border-right: solid 20px black;
+    border-left: solid 20px transparent;
+    border-top: solid 20px transparent;
+    animation: rotate-right .5s;
+}
+
+/* Div 3 - Inside box fill */
+.animation-div-3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    animation: fill .5s;
+    animation-delay: .25s;
+    animation-fill-mode: forwards;
+}
